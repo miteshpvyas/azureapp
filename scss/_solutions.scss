@@ -1,0 +1,222 @@
+.md_solutions {
+    padding: 72px 0;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 1199.95px) {
+        padding: 62px 0;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 42px 0;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        width: 876px;
+        height: 1136px;
+        background-image: url(../images/moonstone_right_shape.svg);
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media screen and (max-width: 1420.95px) {
+            right: -140px;
+        }
+        @media screen and (max-width: 1280.95px) {
+            right: -240px;
+        }
+        @media screen and (max-width: 1199.95px) {
+            right: -340px;
+        }
+        @media screen and (max-width: 991.95px) {
+            right: -420px;
+        }
+        @media screen and (max-width: 767.95px) {
+            display: none;
+        }
+    }
+    .mds_box-item {
+        padding: 0 15px;
+        .mds_row {
+            display: block;
+            min-height: 222px;
+            background-color: $blue;
+            position: relative;
+            @media screen and (max-width: 1199.95px) {
+                min-height: 212px;
+            }
+            @media screen and (max-width: 1024.95px) {
+                min-height: 180px;
+            }
+            @media screen and (max-width: 767.95px) {
+                min-height: 100%;
+                text-decoration: none;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                left: 6px;
+                right: 6px;
+                top: 6px;
+                bottom: 6px;
+                border: 2px solid transparent;
+                transition: all 0.5s ease 0s;
+                -webkit-transition: all 0.5s ease 0s;
+                -moz-transition: all 0.5s ease 0s;
+                -ms-transition: all 0.5s ease 0s;
+                -o-transition: all 0.5s ease 0s;
+            }
+            .mds_box {
+                position: absolute;
+                padding: 15px;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                text-align: center;
+                @media screen and (max-width: 767.95px) {
+                    position: inherit;
+                    top: 0;
+                    transform: translateY(0);
+                    -webkit-transform: translateY(0);
+                    -moz-transform: translateY(0);
+                    -ms-transform: translateY(0);
+                    -o-transform: translateY(0);
+                    padding: 20px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                }
+                img {
+                    width: 84px;
+                    height: 84px;
+                    @media screen and (max-width: 1024.95px) {
+                        height: 64px;
+                        width: 64px;
+                    }
+                    @media screen and (max-width: 767.95px) {
+                        margin-right: 20px;
+                        height: 54px;
+                        width: 54px;
+                    }
+                }
+                .mdsb-text {
+                    margin: 18px 0 0;
+                    width: 100%;
+                    display: inline-block;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: $fw-semibold;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 991.95px) {
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width: 767.95px) {
+                        -webkit-box-flex: 1;
+                        -ms-flex: 1;
+                        flex: 1;
+                        margin: 0;
+                        text-align: left;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                        font-size: 16px;
+                    }
+                }
+            }
+            &:hover {
+                background-color: $off-blue;
+                &::after {
+                    border: 2px solid $white;
+                }
+            }
+        }
+    }
+}
+
+.md_hr-solutions {
+    padding: 72px 0 12px;
+    background-color: $light-grey;
+    @media screen and (max-width: 1199.95px) {
+        padding: 62px 0 12px;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 42px 0 0px;
+    }
+    .mdhrs_box-item {
+        padding: 0 15px;
+        @media screen and (max-width: 767.95px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 0 0 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $blue;
+        }
+        img {
+            width: 122px;
+            height: 122px;
+            @media screen and (max-width: 1199.95px) {
+                width: 112px;
+                height: 112px;
+            }
+            @media screen and (max-width: 1024.95px) {
+                width: 98px;
+                height: 98px;
+            }
+            @media screen and (max-width: 767.95px) {
+                width: 58px;
+                height: 58px;
+                margin-right: 15px;
+            }
+        }
+        .mdhrs_boxin {
+            @media screen and (max-width: 767.95px) {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                margin: 0;
+                text-align: left;
+                -ms-flex-item-align: center;
+                align-self: center;
+            }
+        }
+        .mdbi-title {
+            margin: 6px 0 10px;
+            color: $blue;
+            font-size: 20px;
+            min-height: 48px;
+            letter-spacing: 1.6px;
+            font-weight: $fw-bold;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 991.95px) {
+                font-size: 18px;
+                min-height: 42px;
+            }
+            @media screen and (max-width: 767.95px) {
+                text-align: left;
+                justify-content: flex-start;
+                min-height: 100%;
+                margin: 2px 0 6px;
+                font-weight: $fw-extrabold;
+                br {
+                    display: none;
+                }
+            }
+        }
+        .mdbi-text {
+            margin: 0;
+        }
+    }
+}

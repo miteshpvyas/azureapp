@@ -1,0 +1,123 @@
+.md_meet-team {
+    padding: 62px 0;
+    background-color: $light-grey;
+    @media screen and (max-width: 1199.95px) {
+        padding: 52px 0;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 42px 0 32px;
+    }
+    .md_s-heading {
+        .md_s-subtitle {
+            @media screen and (max-width: 767.95px) {
+                font-size: 20px;
+            }
+        }
+        .md_s-title {
+            @media screen and (max-width: 767.95px) {
+                font-size: 50px;
+            }
+        }
+    }
+    .mdmt_slider {
+        .md_team-box {
+            padding: 15px 0 10px;
+            border: 0;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+            background-color: transparent;
+            transition: all 0.5s ease 0s;
+            -webkit-transition: all 0.5s ease 0s;
+            -moz-transition: all 0.5s ease 0s;
+            -ms-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            @media screen and (max-width: 767.95px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                flex-direction: row;
+            }
+            .card-img {
+                margin: 0 auto;
+                width: 200px;
+                height: 200px;
+                border: 0;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                overflow: hidden;
+                @media screen and (max-width: 767.95px) {
+                    margin: 0 15px 0 0;
+                    width: 140px;
+                    height: 140px;
+                }
+                @media screen and (max-width: 414.95px) {
+                    width: 100px;
+                    height: 100px;
+                }
+                .card-img-top {
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    max-width: none;
+                    height: 200px;
+                    -o-object-position: center center;
+                    object-position: center center;
+                    width: 100%;
+                    @media screen and (max-width: 767.95px) {
+                        height: 140px;
+                    }
+                    @media screen and (max-width: 414.95px) {
+                        height: 100px;
+                    }
+                }
+            }
+            .card-body {
+                padding: 30px 0 10px;
+                @media screen and (max-width: 767.95px) {
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                    padding: 0;
+                    text-align: left;
+                }
+                .card-title {
+                    margin: 0;
+                    font-size: 18px;
+                    color: $blue;
+                    font-weight: $fw-bold;
+                    text-transform: uppercase;
+                }
+                .card-subtitle {
+                    margin: 7px 0 0;
+                    font-size: 15px;
+                    color: $off-grey;
+                    font-weight: $fw-semibold;
+                    text-transform: uppercase;
+                }
+                .card-text {
+                    margin: 14px 0 0;
+                    font-size: 13px;
+                }
+            }
+            &:hover {
+                background-color: $white;
+                @media screen and (max-width: 767.95px) {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

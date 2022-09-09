@@ -1,0 +1,297 @@
+/*==================== Common Body & HTML CSS Start ====================*/
+
+body {
+    font-family: $font-default;
+    font-weight: $fw-default;
+    color: $default-color;
+    font-size: 14px;
+    background-color: $white;
+    letter-spacing: 0.50px;
+}
+
+.container {
+    width: 1170px;
+    max-width: 96%;
+    @media screen and (max-width: 991.95px) {
+        max-width: 98%;
+    }
+}
+
+a,
+button,
+.form-control {
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-default;
+    font-weight: $fw-bold;
+    color: $blue;
+}
+
+a {
+    color: $default-color;
+    &:hover,
+    &:focus {
+        color: $off-blue;
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.btn {
+    color: $white;
+    cursor: pointer;
+    padding: 0 30px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: $fw-bold;
+    background-color: $red;
+    border-color: $red;
+    text-transform: uppercase;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    letter-spacing: 2px;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $red;
+        background-color: $white;
+        border-color: $white;
+    }
+}
+
+.btn-blue {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $red;
+        border-color: $red;
+    }
+}
+
+.btn-hover-blue {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+        background-color: $off-blue;
+        border-color: $off-blue;
+    }
+}
+
+.btn-width {
+    @media screen and (max-width: 991.95px) {
+        width: 100%;
+    }
+}
+
+.text-red {
+    color: $red !important;
+}
+
+.border-top-in {
+    border-top: 1px solid rgba($color: $white, $alpha: 0.2);
+}
+
+.border-bottom-in {
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+}
+
+
+/*==================== Common Body & HTML CSS End ====================*/
+
+.md_main-section {
+    margin-top: 175px;
+    @media screen and (max-width: 1199.95px) {
+        margin-top: 161px;
+    }
+    @media screen and (max-width: 1024.95px) {
+        margin-top: 155px;
+    }
+    @media screen and (max-width: 991.95px) {
+        margin-top: 139px;
+    }
+    @media screen and (max-width: 767.95px) {
+        margin-top: 74px;
+    }
+}
+
+.md_s-heading {
+    margin-bottom: 50px;
+    @media screen and (max-width: 991.95px) {
+        margin-bottom: 40px;
+    }
+    .md_s-title {
+        margin: 0 0 14px;
+        color: $blue;
+        font-size: 42px;
+        font-weight: $fw-bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @media screen and (max-width: 1199.95px) {
+            font-size: 38px;
+        }
+        @media screen and (max-width: 991.95px) {
+            font-size: 34px;
+            margin: 0 0 10px;
+        }
+        @media screen and (max-width: 374.95px) {
+            font-size: 32px;
+        }
+    }
+    .md_s-subtitle {
+        margin: 0;
+        color: $blue;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        @media screen and (max-width: 575.95px) {
+            font-size: 13px;
+        }
+    }
+    .md_s-text {
+        width: 676px;
+        max-width: 100%;
+        margin: 22px auto 0;
+        line-height: 22px;
+        font-weight: $fw-semibold;
+        @media screen and (max-width: 575.95px) {
+            font-size: 13px;
+            margin: 18px auto 0;
+            line-height: 20px;
+        }
+    }
+}
+
+.md_ss-heading {
+    .md_s-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: $fw-bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @media screen and (max-width: 1199.95px) {
+            font-size: 18px;
+        }
+    }
+    .md_s-subtitle {
+        margin: 0;
+        color: $white;
+        font-size: 52px;
+        letter-spacing: 2px;
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        @media screen and (max-width: 1199.95px) {
+            font-size: 44px;
+        }
+    }
+    .md_s-text {
+        margin: 8px 0 0;
+        color: $white;
+        font-size: 15px;
+        @media screen and (max-width: 991.95px) {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+.md_form {
+    .form-control {
+        height: 50px;
+        font-size: 15px;
+        padding: 8px 24px;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        border-color: $border-color;
+    }
+}
+
+.md_outline-form {
+    .form-label {
+        margin: 0;
+        color: $white;
+        font-size: 15px;
+        font-weight: $fw-bold;
+        span {
+            font-weight: $fw-default;
+        }
+    }
+    .form-select {
+        cursor: pointer;
+        height: 50px;
+        color: $white;
+        font-size: 15px;
+        padding: 8px 40px 8px 24px;
+        border-color: $white;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        background-color: transparent;
+        background-image: url(../images/drop_arrow.svg);
+        option {
+            color: $off-blue;
+        }
+    }
+}
+
+#top-back {
+    color: $white;
+    width: 36px;
+    height: 36px;
+    padding-top: 2px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 1000;
+    line-height: 28px;
+    background-color: $red;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    &:hover {
+        background-color: $red;
+    }
+    @media screen and (max-width: 991.95px) {
+        bottom: 15px;
+    }
+}

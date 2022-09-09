@@ -1,0 +1,53 @@
+.md_can-helpyou {
+    padding: 62px 0;
+    background-color: $blue;
+    @media screen and (max-width: 1199.95px) {
+        padding: 50px 0;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 32px 0;
+    }
+    .md_heading {
+        padding-bottom: 18px;
+        border-bottom: 1px solid $white;
+        .md_title {
+            margin: 0;
+            color: $white;
+            font-size: 30px;
+            font-weight: $fw-bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            @media screen and (max-width: 1199.95px) {
+                font-size: 28px;
+            }
+            @media screen and (max-width: 767.95px) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: 374.95px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .mdc_helprow {
+        margin-top: 26px;
+        .md_outline-form {
+            .form-select {
+                @media screen and (max-width: 374.95px) {
+                    padding: 8px 34px 8px 18px;
+                }
+            }
+            .form-label {
+                @media screen and (max-width: 767.95px) {
+                    min-width: 180px;
+                }
+                @media screen and (max-width: 575.95px) {
+                    min-width: 150px;
+                }
+                @media screen and (max-width: 374.95px) {
+                    font-size: 13px;
+                    min-width: 129px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.md_industries {
+    padding: 62px 0;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 1199.95px) {
+        padding: 52px 0;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 42px 0;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 244px;
+        height: 284px;
+        background-image: url(../images/moonstone_left_shape.svg);
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media screen and (max-width: 767.95px) {
+            display: none;
+        }
+    }
+    .md_s-heading {
+        @media screen and (max-width: 767.95px) {
+            margin-bottom: 20px;
+        }
+    }
+    .md_indus-list {
+        .list-group {
+            .list-group-item {
+                flex: 0 0 auto;
+                width: 33.3333333333%;
+                border: 0;
+                border-radius: 0;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                -ms-border-radius: 0;
+                -o-border-radius: 0;
+                background-color: transparent;
+                border-bottom: 1px solid $off-grey;
+                padding: 8px 15px 8px 0;
+                @media screen and (max-width: 991.95px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 767.95px) {
+                    width: 100%;
+                    padding: 8px 0;
+                }
+                .mdit_box {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    .mdit-imgbox {
+                        width: 42px;
+                        height: 42px;
+                        margin-right: 10px;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                        img {
+                            width: 42px;
+                            height: 42px;
+                        }
+                    }
+                    .mdit_title {
+                        -webkit-box-flex: 1;
+                        -ms-flex: 1;
+                        flex: 1;
+                        -ms-flex-item-align: center;
+                        align-self: center;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $default-color;
+                        font-weight: $fw-bold;
+                        text-transform: uppercase;
+                        @media screen and (max-width: 1199.95px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

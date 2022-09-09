@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 668 800" style="enable-background:new 0 0 668 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#F6F6F6;}
+</style>
+<g>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" width="668" height="800"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st0">
+				<g>
+					<g>
+						<path class="st1" d="M733.86,309.65V130.09l-261.2,137.84l-261.2-137.84v173.85L24.97,205.47v596.96h266.24V436.19
+							l181.09,95.63l181.82-92.3v362.9h282.65V206.65L733.86,309.65z M733.86,722.69V399.06l123.15-62.51v386.14H733.86z
+							 M104.71,722.69V337.73l106.75,56.37v328.59H104.71z"/>
+						<polygon class="st1" points="671.72,102.89 472.08,199.27 273.48,103.39 273.48,35.81 472.08,131.69 670.83,35.8 						"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

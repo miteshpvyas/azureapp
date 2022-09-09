@@ -1,0 +1,189 @@
+.md_testimonial {
+    padding: 62px 0;
+    @media screen and (max-width: 1199.95px) {
+        padding: 52px 0;
+    }
+    @media screen and (max-width: 767.95px) {
+        padding: 32px 0 42px;
+    }
+    .md_s-heading {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid $blue;
+        @media screen and (max-width: 767.95px) {
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+        }
+    }
+    .md_action {
+        .btn {
+            @media screen and (max-width: 374.95px) {
+                padding: 0 26px;
+                font-size: 13px;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+    .mdt_slider {
+        .md_testimonial-box {
+            .mdtb_bodybox {
+                padding-left: 50px;
+                position: relative;
+                @media screen and (max-width: 991.95px) {
+                    padding-left: 30px;
+                }
+                @media screen and (max-width: 767.95px) {
+                    padding-left: 10px;
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 22px;
+                    background-image: url(../images/quotes_icon.svg);
+                    background-repeat: no-repeat;
+                    width: 68px;
+                    height: 52px;
+                    z-index: -1;
+                    @media screen and (max-width: 991.95px) {
+                        left: 0px;
+                    }
+                    @media screen and (max-width: 767.95px) {
+                        top: 4px;
+                    }
+                }
+                .mdtb_text {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $off-black;
+                    @media screen and (max-width: 767.95px) {
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+                .mdtb_detail {
+                    margin-top: 30px;
+                    @media screen and (max-width: 767.95px) {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    .mdtb_name {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: $fw-bold;
+                        color: $off-black;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        letter-spacing: 2px;
+                        @media screen and (max-width: 767.95px) {
+                            font-size: 13px;
+                        }
+                    }
+                    .mdtb_c-name {
+                        margin: 0 0 0 15px;
+                        font-size: 14px;
+                        display: inline-block;
+                        @media screen and (max-width: 767.95px) {
+                            font-size: 12px;
+                            margin: 0 0 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-testimonial {
+            .owl-stage-outer {
+                z-index: 2;
+            }
+            .owl-nav {
+                position: absolute;
+                left: -60px;
+                right: -60px;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                z-index: 1;
+                @media screen and (max-width: 1199.95px) {
+                    left: -46px;
+                    right: -46px;
+                }
+                @media screen and (max-width: 991.95px) {
+                    left: -36px;
+                    right: -36px;
+                }
+                @media screen and (max-width: 767.95px) {
+                    left: -22px;
+                    right: -22px;
+                }
+                .owl-prev {
+                    float: left;
+                    span {
+                        background-image: url(../images/prev_arrow.svg);
+                    }
+                }
+                .owl-next {
+                    float: right;
+                    span {
+                        background-image: url(../images/next_arrow.svg);
+                    }
+                }
+                .owl-prev,
+                .owl-next {
+                    width: 18px;
+                    height: 28px;
+                    @media screen and (max-width: 767.95px) {
+                        width: 14px;
+                        height: 22px;
+                    }
+                    span {
+                        float: left;
+                        font-size: 1px;
+                        width: 18px;
+                        height: 28px;
+                        background-repeat: no-repeat;
+                        background-size: 100% auto;
+                        @media screen and (max-width: 767.95px) {
+                            width: 14px;
+                            height: 22px;
+                        }
+                    }
+                }
+            }
+            .owl-dots {
+                text-align: center;
+                margin: 38px 0 35px;
+                .owl-dot {
+                    margin: 0 4px;
+                    display: inline-block;
+                    span {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        border: 1px solid $blue;
+                        display: inline-block;
+                        background-color: $white;
+                        transition: all 0.5s ease 0s;
+                        -webkit-transition: all 0.5s ease 0s;
+                        -moz-transition: all 0.5s ease 0s;
+                        -ms-transition: all 0.5s ease 0s;
+                        -o-transition: all 0.5s ease 0s;
+                    }
+                    &.active {
+                        span {
+                            background-color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
